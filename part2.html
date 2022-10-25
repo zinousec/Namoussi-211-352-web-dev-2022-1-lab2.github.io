@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Authentication</title>
+</head>
+
+<body class="body2">
+    <header>
+        <a href="index.html">To the main</a>
+        <h1>Authentication</h1>
+    </header>
+    <main class="main2">
+        
+        <form method="POST" action="http://httpbin.org/post" enctype="multipart/form-data" class="auth">
+            <div class="marg">
+                <label for="login">login</label>
+                <input type="text" name="login" id="login" placeholder="Enter login" required>
+            </div>
+            <div class="marg">
+                <label for="password">password</label>
+                <input type="password" name="password" id="password" placeholder="Enter password" required> 
+            </div>
+            <div class="marg">
+                <input type="checkbox" name="rememb" id="rememb" value="true">
+                <label for="rememb">Remember me</label>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </main>
+
+</body>
+</html>
